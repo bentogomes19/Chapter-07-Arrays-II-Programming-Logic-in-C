@@ -13,10 +13,10 @@ ou exame);
 int main()
 {
 	float soma_notas;
-	float alunos[4][5], medias[4];
-	char nome[4][22];
+	float alunos[15][5], medias[15];
+	char nome[15][22];
 
-	for(int i=0; i<4; i++)
+	for(int i=0; i<15; i++)
 	{
 		printf("\nAluno %d --> Digite o seu nome: ", i+1);
 		fgets(nome[i], 22, stdin);
@@ -30,7 +30,7 @@ int main()
 		}
 	}
 
-	for (int i=0; i<4; i++) // Calcular a media das provas e guardar em um vetor com 5 posições contendo a média dos alunos
+	for (int i=0; i<15; i++) // Calcular a media das provas e guardar em um vetor com 5 posições contendo a média dos alunos
 	{
 		soma_notas = 0;
 		for (int j=0; j<5; j++)
@@ -41,7 +41,7 @@ int main()
 	}
 
 
-	for (int i=0; i<4; i++)
+	for (int i=0; i<15; i++)
 	{
 		printf("\nNome: %s", nome[i]);
 		printf("Media --> %.2f\n", medias[i]);
