@@ -24,19 +24,14 @@ int main()
 				soma_par += mat[i][j];
 				l++;
 			}
-		}
-	}	
-
-		for (j=0; j<4; j++)
-		{
-			if (i=0)
+			if (i==0)
 			{
 				if (mat[i][j] >= 12 && mat[i][j] <= 20)
 				{
 					k++;
 				}
 			}
-			if (i=1)
+			if (i==1)
 			{
 				if (mat[i][j] >= 12 && mat[i][j] <= 20)
 				{
@@ -44,6 +39,7 @@ int main()
 				}
 			}
 		}
+	}	
 	media = (float)soma_par / l;
 	printf("A quantidade de elementos maiores que 12 e menores que 20 na coluna 01 = %d.\n", k);
 	printf("A quantidade de elementos maiores que 12 e menores que 20 na coluna 02 = %d.\n", m);
